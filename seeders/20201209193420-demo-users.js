@@ -7,13 +7,13 @@ module.exports = {
       [
         {
           name: "Jane",
-          fashionname: "janista",
-          passcode: "1234"
+          username: "janista",
+          password: "1234"
         },
         {
           name: "Jill",
-          fashionname: "jillista",
-          passcode: "5678"
+          username: "jillista",
+          password: "5678"
         }
       ]
     )

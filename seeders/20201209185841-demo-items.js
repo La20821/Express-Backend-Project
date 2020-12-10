@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert(
+    const Items = await queryInterface.bulkInsert(
       "Items",
       [
         {
@@ -10,6 +10,7 @@ module.exports = {
           color: "red",
           size: 6,
           img:"",
+          userId: 1,
           createdAt: new Date(),
           updatedAt: new Date()
         },
@@ -18,6 +19,7 @@ module.exports = {
           color: "black",
           size: 6,
           img:"",
+          userId: 2,
           createdAt: new Date(),
           updatedAt: new Date()
         }
