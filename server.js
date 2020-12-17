@@ -7,21 +7,21 @@ const cookieParser = require("cookie-parser");
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-const verifyToken = (req, res, next) => {
-    let token = req.cookies.jwt; // COOKIE PARSER GIVES YOU A .cookies PROP, WE NAMED OUR TOKEN jwt
+// const verifyToken = (req, res, next) => {
+//     let token = req.cookies.jwt; // COOKIE PARSER GIVES YOU A .cookies PROP, WE NAMED OUR TOKEN jwt
   
-    console.log("Cookies: ", req.cookies.jwt);
+//     console.log("Cookies: ", req.cookies.jwt);
   
-    jwt.verify(token, process.env.JWT_SECRET, (err, decodedUser) => {
-      if (err || !decodedUser) {
-        return res.status(401).json({ error: "Unauthorized Request" });
-      }
-      req.user = decodedUser; // ADDS A .user PROP TO REQ FOR TOKEN USER
-      console.log(decodedUser);
+//     jwt.verify(token, process.env.JWT_SECRET, (err, decodedUser) => {
+//       if (err || !decodedUser) {
+//         return res.status(401).json({ error: "Unauthorized Request" });
+//       }
+//       req.user = decodedUser; // ADDS A .user PROP TO REQ FOR TOKEN USER
+//       console.log(decodedUser);
   
-      next();
-    });
-};
+//       next();
+//     });
+// };
 
 app.use(cors())
 app.use(bodyParser.json());
@@ -36,13 +36,13 @@ app.get("/", (req, res) => {
 
 
 
-app.use("/users", require("./controllers/usersController.js"));
-app.use('/items', require('./controllers/itemsController.js'));
-app.use("/auth", require("./controllers/authController.js"));
+app.use("/api/users", require("./controllers/usersControllerold.js"));
+app.use("/api/items", require("./controllers/itemsController.js"));
+app.use("/api/auth", require("./controllers/authController.js"));
 
 
 
 app.listen(process.env.PORT, ()=>{
-    console.log("My feet are tired from running");
+    console.log("My feet are tired from running", process.env.PORT);
 });
  

@@ -6,20 +6,20 @@ module.exports = {
       "Items",
       [
         {
+          userId: 1,
           type: "blouse",
           color: "red",
           size: 6,
           img:"",
-          userId: 1,
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
+          userId: 2,
           type: "pants",
           color: "black",
           size: 6,
           img:"",
-          userId: 2,
           createdAt: new Date(),
           updatedAt: new Date()
         }
