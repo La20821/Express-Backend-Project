@@ -1,5 +1,6 @@
 ## Purpose 
-The purpose of the the Back End aspect of this project is to set up the specific routes based off of web application's functionality. 
+The purpose of the the Back End aspect of this project is to set up the specific routes based off of web application's desired functionality. These endpoints would ultiamtely be the framework and skeleton of the overall project and is proven to be a very important portion a Full Stack Web Application. Within the backend portion of this project, I created an API database so that I could store information and later pass it into the React front end of my project. I was able to use Postman, a tool common for developers to test RESTful APIs by testing the endpoints, providing an input and expecting an output rendered correct data. 
+
 ## Getting Started
 ### Entity Relationship Diagram
 
@@ -12,9 +13,11 @@ The purpose of the the Back End aspect of this project is to set up the specific
 
 * Command Line
 * Visual Studio Code
-* Goolge Chrome Web Browser
+* Google Chrome Web Browser
 * PG Admin
 * Lucid Chart 
+* Postman
+* Npx Sequelize
 
 
 ## Development Steps
