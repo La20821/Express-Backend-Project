@@ -34,3 +34,11 @@ The purpose of the the Back End aspect of this project is to set up the specific
 * As a user, I should be able to edit an account.
 * As a user, I should be able to delete an account.
 * As a user, I should be able to sign in. 
+* As a user, I should be able to add an item. 
+* As a user, I should be able to edit an item.
+* As a user, I should be able to delete an item.
+* As a user, I should be able to assign an item to a user. 
+
+
+## Issues 
+The main issue I ran into during back end development was understanding the relationships between my models and users. I spent a lot of time editing the relationships and updating the kind of data being stored in the users and models tables. It took debugging a lot of errors to finally reach a point where all the endpoints worked during testing on the Postman tool.
